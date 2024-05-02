@@ -1,0 +1,6 @@
+@BlockNote_HostAddress = http://localhost:5070
+
+GET {{BlockNote_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
