@@ -27,3 +27,5 @@ CREATE TABLE Papeleria (
 
     
 ALTER TABLE Notas ADD FOREIGN KEY (id_Categoria) REFERENCES Categorias(id)
+
+

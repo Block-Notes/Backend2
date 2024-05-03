@@ -13,7 +13,7 @@ namespace Backend2.Models
       public DateTime? FechaCreation { get; set; }
       public DateTime? HoraModificacion { get; set; }
       public string? Estado { get; set; }
-      public string? id_Categoria { get; set; }
+      public int? id_Categoria { get; set; }
 
 
     

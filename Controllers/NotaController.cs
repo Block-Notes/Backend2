@@ -22,7 +22,7 @@ namespace RegistroHoras.Controllers
         }
 
 
-        [Route("http://localhost:5070/[controller]")]
+       
 
 
 
