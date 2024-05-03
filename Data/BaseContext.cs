@@ -9,6 +9,7 @@ namespace Backend2.Data
 
         }
         public DbSet<Nota> Notas { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
 
      
         
