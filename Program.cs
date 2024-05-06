@@ -50,9 +50,9 @@ app.MapGet("/weatherforecast", () =>
         .ToArray();
     return forecast;
 })
-.WithName("GetWeatherForecast");
-app.UseCors("NoteWave");
+.WithName("GetWeatherForecast")
 .WithOpenApi();
+app.UseCors("NoteWave");
 app.MapControllers();
 app.Run();
 
