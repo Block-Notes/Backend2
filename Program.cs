@@ -10,6 +10,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
+builder.Services.AddCors(options =>{options.AddPolicy("NoteWave",builder =>{
+    builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();});
+});
+
 builder.Services.AddDbContext<BaseContext>
 (options =>
     options.UseMySql(
@@ -46,7 +50,8 @@ app.MapGet("/weatherforecast", () =>
         .ToArray();
     return forecast;
 })
-.WithName("GetWeatherForecast")
+.WithName("GetWeatherForecast");
+app.UseCors("NoteWave");
 .WithOpenApi();
 app.MapControllers();
 app.Run();
