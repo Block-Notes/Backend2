@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
- using Backend2.Models; 
+ using Backend2.Models;
 
 namespace Backend2.Data
 {
@@ -11,7 +11,6 @@ namespace Backend2.Data
         public DbSet<Nota> Notas { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
 
-     
-        
-    }
-}
+
+
+}}

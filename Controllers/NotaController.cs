@@ -42,7 +42,7 @@ namespace RegistroHoras.Controllers
         _context.Notas.Add(nota);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction("GetNote", new { id = nota.Id }, nota);
+        return CreatedAtAction("GetNote", new { id = nota.id }, nota);
     }
     
     

@@ -14,6 +14,7 @@ namespace Backend2.Models
       public DateTime? HoraModificacion { get; set; }
       public string? Estado { get; set; }
       public int? id_Categoria { get; set; }
+      
 
 
     
