@@ -92,15 +92,6 @@ namespace Backend2.Controllers;
             }
         }
 
-
-
-
-
-
-
-
-
-
                 [HttpPut("{id}/estado")]
                 public IActionResult CambiarEstadoNota(int id, [FromBody] Nota notaActualizada)
                 {

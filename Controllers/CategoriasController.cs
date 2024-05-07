@@ -24,19 +24,12 @@ public class CategoriasController : ControllerBase
         return await _context.Categorias.ToListAsync();
     }
     /* ========== CLASE PARA CREAR UNA NOTA ============= */
-    [HttpPost]
+    [HttpPost("CrearCategoria")]
     public async Task<ActionResult<Categoria>> CrearCategoria(Categoria category)
     {
         _context.Categorias.Add(category);
         await _context.SaveChangesAsync();
         return CreatedAtAction("GetCategoria", new { id = category.Id }, category);
     }
-    /* public async Task<ActionResult<Nota>> CrearCategoria(Nota nota)
-    {
-        _context.Notas.Add(nota);
-        await _context.SaveChangesAsync();
-        return CreatedAtAction("GetNota", new { id = nota.id }, nota);
-    } */
-
-
+   
 }
